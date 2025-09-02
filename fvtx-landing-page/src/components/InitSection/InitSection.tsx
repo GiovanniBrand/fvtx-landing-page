@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./InitSection.module.css";
 import { IoLocationSharp, IoGlobeOutline } from "react-icons/io5";
-// import FvtxLogo from '../../assets/fvtx-logo.svg';
+import fvtxLogoUrl from "../../assets/fvtx-logo.svg";
 import { Navbar } from "../NavBar/NavBar";
 import { AnimatedBackground } from "../AnimatedBackground/AnimatedBackground";
 
@@ -25,18 +25,28 @@ export const InitSection: React.FC = () => {
             <li>Etc.</li>
           </ul>
           <div className={styles.location}>
-            <p><IoLocationSharp /> Curitiba-Brazil</p>
-            <p><IoGlobeOutline /> Worldwide Available</p>
+            <p>
+              <IoLocationSharp /> Curitiba-Brazil
+            </p>
+            <p>
+              <IoGlobeOutline /> Worldwide Available
+            </p>
           </div>
         </aside>
 
         <main className={styles.rightColumn}>
           <AnimatedBackground />
-            <div className={styles.overlayText}>
-              {/* 2. Use o SVG importado como um componente */}
-              {/* <FvtxLogo className={styles.fvtxLogo} /> */}
-              <p>creating crative universes by scratch</p>
-            </div>
+          <div className={styles.overlayContent}>
+            <img
+              src={fvtxLogoUrl}
+              className={styles.fvtxLogo}
+              alt="FVTX Logo"
+            />
+            <p className={styles.tagline}>
+              creating{" "}
+              <span className={styles.italicSpan}>crative universes</span> by scratch
+            </p>
+          </div>
         </main>
       </section>
     </>

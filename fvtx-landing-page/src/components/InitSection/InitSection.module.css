@@ -1,4 +1,3 @@
-/* --- Layout Principal da Seção --- */
 .pageGrid {
   display: flex;
   min-height: 100vh;
@@ -9,15 +8,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* AUMENTADO para dar mais 'respiro' entre os elementos */
-  gap: 6rem; /* <-- Ajuste principal aqui: de 4rem para 6rem */
+  gap: 4rem;
+  padding-right: 2rem; /* Adiciona um respiro entre o conteúdo e a linha */
 }
 
 .rightColumn {
   flex: 2;
 }
 
-/* --- Estilos do Conteúdo --- */
 .nameSection h1 {
   font-family: 'Anybody', sans-serif;
   font-size: 153px;
@@ -25,7 +23,7 @@
   font-style: italic;
   line-height: 79%;
   font-stretch: 62.5%;
-  letter-spacing: 0;
+  letter-spacing: -0.25rem;
   text-transform: uppercase;
 }
 
@@ -50,6 +48,44 @@
   font-stretch: 80%;
   letter-spacing: -3px;
   color: var(--color-text-light)
+}
+
+.overlayContent {
+  position: absolute;
+  width: 720px;
+  height: 390px;
+  top: 459px;
+  left: 62rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.fvtxLogo {
+  width: 100%; 
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(1) brightness(0.9);
+}
+
+.tagline {
+  color: var(--color-text-light);
+  opacity: 0.9;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Anybody', sans-serif;
+  font-stretch: 62.5%;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 79%;
+  letter-spacing: 0;
+  font-style: normal;
+  margin-top: 1rem;
+  text-align: end;
+}
+
+.italicSpan {
+  font-style: italic;
 }
 
 /* --- Bloco de Responsividade --- */
