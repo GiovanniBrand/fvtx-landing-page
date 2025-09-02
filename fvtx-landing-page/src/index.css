@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+
+:root {
+  --font-primary: 'Anybody', sans-serif;
+  --color-background: #FE0000;
+  --color-primary: #0000FF;
+  --color-text-dark: #000000;
+  --color-text-light: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ol, ul {
+  list-style: none;
+}

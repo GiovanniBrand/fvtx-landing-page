@@ -1,0 +1,74 @@
+/* --- Layout Principal da Seção --- */
+.pageGrid {
+  display: flex;
+  min-height: 100vh;
+  padding: 9rem 1rem 0.25rem 6rem;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* AUMENTADO para dar mais 'respiro' entre os elementos */
+  gap: 6rem; /* <-- Ajuste principal aqui: de 4rem para 6rem */
+}
+
+.rightColumn {
+  flex: 2;
+}
+
+/* --- Estilos do Conteúdo --- */
+.nameSection h1 {
+  font-family: 'Anybody', sans-serif;
+  font-size: 153px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 79%;
+  font-stretch: 62.5%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.services {
+  font-family: 'Anybody', sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 89%;
+  font-stretch: 80%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.location p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Anybody', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79%;
+  font-stretch: 80%;
+  letter-spacing: -3px;
+  color: var(--color-text-light)
+}
+
+/* --- Bloco de Responsividade --- */
+@media (max-width: 900px) {
+  .pageGrid {
+    flex-direction: column;
+    padding: 6rem 1.5rem 1.5rem 1.5rem;
+    gap: 3rem;
+  }
+  
+  .leftColumn {
+    gap: 3rem;
+  }
+  
+  .nameSection h1 {
+    font-size: 80px;
+  }
+
+  .rightColumn {
+    min-height: 50vh;
+  }
+}

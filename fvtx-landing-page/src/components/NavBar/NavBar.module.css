@@ -1,0 +1,49 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 2rem; 
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNav a {
+  font-family: 'Anybody', sans-serif;
+  font-stretch: 62.5%;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .mainNav {
+    justify-content: center;
+  }
+  
+  .rightLinks {
+    display: none;
+  }
+}
