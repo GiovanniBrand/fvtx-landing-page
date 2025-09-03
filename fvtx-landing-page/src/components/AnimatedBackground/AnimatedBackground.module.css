@@ -8,13 +8,35 @@
 }
 
 .gif {
-  width: 100%;
-  height: 100%;
+  width: 110vh;
+  height: 70vh;
   object-fit: cover;
-  display: block;
 }
 
 @media (max-width: 1400px) {
+  .gifContainer {
+    position: relative;
+    top: 1vh;
+    left: 10vh;
+    width: 102vh;
+    height: 512px;
+  }
+  .gif {
+    width: 100vh;
+    height: 65vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gif {
+    width: 90vh;
+    height: 59vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1300px) {
   .gifContainer {
     position: relative;
     top: 1vh;

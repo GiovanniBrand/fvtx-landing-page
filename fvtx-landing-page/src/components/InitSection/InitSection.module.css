@@ -107,6 +107,10 @@
     gap: 2rem;
   }
 
+  .fvtxLogo .tagline{
+    width: 20vh;
+  }
+
   .nameSection h1 {
     font-size: 120px;
     font-weight: 800;
@@ -119,6 +123,19 @@
 
   .location p {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .overlayContent {
+    width: 55vh;
+    height: 40vh;
+    top: 33vh;
+    left: 14rem;
+  }
+
+  .fvtxLogo .tagline{
+    width: 10vh;
   }
 }
 
