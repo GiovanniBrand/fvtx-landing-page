@@ -11,7 +11,6 @@ export const InitSection: React.FC = () => {
       <Navbar />
       <section className={styles.pageGrid}>
         <aside className={styles.leftColumn}>
-          {/* O conteúdo agora fluirá naturalmente do topo para baixo */}
           <div className={styles.nameSection}>
             <h1>AUGUSTO</h1>
             <h1>SCHRÖTER</h1>
@@ -35,6 +34,8 @@ export const InitSection: React.FC = () => {
         </aside>
 
         <main className={styles.rightColumn}>
+        {/* Adicione este 'div' para agrupar os elementos visuais */}
+        <div className={styles.visualBlock}>
           <AnimatedBackground />
           <div className={styles.overlayContent}>
             <img
@@ -47,7 +48,8 @@ export const InitSection: React.FC = () => {
               <span className={styles.italicSpan}>crative universes</span> by scratch
             </p>
           </div>
-        </main>
+        </div>
+      </main>
       </section>
     </>
   );

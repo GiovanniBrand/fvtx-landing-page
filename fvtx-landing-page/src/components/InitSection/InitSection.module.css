@@ -17,7 +17,7 @@
 }
 
 .nameSection h1 {
-  font-family: 'Anybody', sans-serif;
+  font-family: "Anybody", sans-serif;
   font-size: 153px;
   font-weight: 800;
   font-style: italic;
@@ -28,7 +28,7 @@
 }
 
 .services {
-  font-family: 'Anybody', sans-serif;
+  font-family: "Anybody", sans-serif;
   font-size: 43px;
   font-weight: 700;
   line-height: 89%;
@@ -41,21 +41,28 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Anybody', sans-serif;
+  font-family: "Anybody", sans-serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 79%;
   font-stretch: 80%;
   letter-spacing: -3px;
-  color: var(--color-text-light)
+  color: var(--color-text-light);
+}
+
+.visualBlock {
+  position: relative; /* Essencial para ser o 'palco' dos elementos internos */
+  width: 65vw;
+  max-width: 1200px; /* Um limite para telas muito grandes */
+  aspect-ratio: 1200 / 600;
 }
 
 .overlayContent {
   position: absolute;
-  width: 720px;
-  height: 390px;
-  top: 459px;
-  left: 62rem;
+  width: 65vh;
+  height: 59vh;
+  top: 20vh;
+  left: 20rem;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -64,7 +71,7 @@
 }
 
 .fvtxLogo {
-  width: 100%; 
+  width: 100%;
   height: auto;
   filter: brightness(0) saturate(100%) invert(1) brightness(0.9);
 }
@@ -73,7 +80,7 @@
   color: var(--color-text-light);
   opacity: 0.9;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  font-family: 'Anybody', sans-serif;
+  font-family: "Anybody", sans-serif;
   font-stretch: 62.5%;
   font-weight: 600;
   font-size: 48px;
@@ -89,22 +96,60 @@
 }
 
 /* --- Bloco de Responsividade --- */
+@media (max-width: 1400px) {
+  .overlayContent {
+    width: 65vh;
+    height: 50vh;
+    top: 25vh;
+    left: 18rem;
+  }
+  .leftColumn {
+    gap: 2rem;
+  }
+
+  .nameSection h1 {
+    font-size: 120px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 79%;
+    font-stretch: 62.5%;
+    letter-spacing: -0.25rem;
+    text-transform: uppercase;
+  }
+
+  .location p {
+    font-size: 36px;
+  }
+}
+
+.services {
+  font-family: "Anybody", sans-serif;
+  font-size: 30px;
+}
+
 @media (max-width: 900px) {
   .pageGrid {
     flex-direction: column;
     padding: 6rem 1.5rem 1.5rem 1.5rem;
     gap: 3rem;
   }
-  
+
   .leftColumn {
     gap: 3rem;
   }
-  
+
   .nameSection h1 {
     font-size: 80px;
   }
 
   .rightColumn {
     min-height: 50vh;
+  }
+
+  .overlayContent {
+    width: 20vh;
+    height: 20vh;
+    top: 20vh;
+    left: 20rem;
   }
 }

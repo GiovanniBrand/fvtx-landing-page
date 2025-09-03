@@ -14,13 +14,13 @@
   display: block;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .gifContainer {
     position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    height: 400px;
+    top: 1vh;
+    left: 10vh;
+    width: 102vh;
+    height: 512px;
   }
 }
 
