@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 
-export const Navbar: React.FC = () => {
+export const NavBar: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>

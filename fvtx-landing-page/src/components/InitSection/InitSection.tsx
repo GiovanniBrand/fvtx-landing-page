@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./InitSection.module.css";
 import { IoLocationSharp, IoGlobeOutline } from "react-icons/io5";
 import fvtxLogoUrl from "../../assets/fvtx-logo.svg";
-import { Navbar } from "../NavBar/NavBar";
+import { NavBar } from "../NavBar/NavBar";
 import { AnimatedBackground } from "../AnimatedBackground/AnimatedBackground";
 
 export const InitSection: React.FC = () => {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <section className={styles.pageGrid}>
         <aside className={styles.leftColumn}>
           <div className={styles.nameSection}>
